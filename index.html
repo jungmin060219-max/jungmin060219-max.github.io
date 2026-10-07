@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이정민 - 프로필 & 게임 포트폴리오</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+      background: #f7f8fc;
+      color: #20232a;
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(1050px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 72px 0 48px;
+      text-align: center;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: #111827;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(34px, 6vw, 58px);
+      line-height: 1.15;
+      margin-bottom: 18px;
+      letter-spacing: -2px;
+    }
+    .intro {
+      max-width: 720px;
+      margin: 0 auto;
+      color: #626977;
+      font-size: 16px;
+    }
+
+    section { padding: 22px 0 55px; }
+    .section-title {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .section-title h2 {
+      font-size: 27px;
+      letter-spacing: -1px;
+    }
+    .section-title p {
+      color: #7a8190;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+    .profile-card {
+      background: #fff;
+      border: 1px solid #e9ebf0;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 8px 28px rgba(25, 35, 55, .05);
+    }
+    .icon { font-size: 30px; margin-bottom: 12px; }
+    .profile-card h3 { font-size: 18px; margin-bottom: 8px; }
+    .profile-card p { color: #626977; font-size: 14px; }
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .game-card, .music-card {
+      background: #111827;
+      color: #fff;
+      border-radius: 18px;
+      padding: 22px;
+      min-height: 145px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .game-card:hover, .music-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(17,24,39,.18);
+    }
+    .number {
+      font-size: 12px;
+      opacity: .65;
+      letter-spacing: 1px;
+    }
+    .game-card h3, .music-card h3 {
+      font-size: 19px;
+      margin: 8px 0;
+    }
+    .play {
+      font-size: 12px;
+      opacity: .7;
+    }
+
+    .music-card {
+      background: #fff;
+      color: #20232a;
+      border: 1px solid #e9ebf0;
+    }
+    .music-card .play { color: #747b88; }
+
+    .music-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0 45px;
+      color: #8a909b;
+      font-size: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .profile-grid, .games, .music-grid {
+        grid-template-columns: 1fr;
+      }
+      header { padding-top: 48px; }
+      section { padding-bottom: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <span class="eyebrow">PORTFOLIO</span>
+      <h1>안녕하세요, 이정민입니다 ✨</h1>
+      <p class="intro">
+        연성대학교 경영학과에서 배우고 경험하며,
+        새로운 것을 직접 만들어보는 것을 좋아합니다.
+        배움에 대한 열정과 성실함을 바탕으로 매일 조금씩 성장하고 있습니다.
+      </p>
+    </header>
+
+    <section>
+      <div class="section-title">
+        <h2>ABOUT ME</h2>
+        <p>저를 소개합니다.</p>
+      </div>
+
+      <div class="profile-grid">
+        <article class="profile-card">
+          <div class="icon">🎓</div>
+          <h3>소속 (Major)</h3>
+          <p>
+            연성대학교 경영학과 재학 중<br>
+            기업의 흐름을 이해하고 합리적인 의사결정과
+            경영 전략을 배우며 다방면의 역량을 키우고 있습니다.
+          </p>
+        </article>
+
+        <article class="profile-card">
+          <div class="icon">💪</div>
+          <h3>취미 (Hobby)</h3>
+          <p>
+            운동 & 웨이트 트레이닝<br>
+            꾸준한 운동을 통해 체력 관리와 강한 집중력을 유지합니다.
+            끈기 있게 계속 도전하는 마음가짐의 원동력입니다.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>🎮 MY RETRO GAME ARCADE</h2>
+        <p>게임을 클릭하면 바로 플레이할 수 있습니다.</p>
+      </div>
+
+      <div class="games">
+        <a class="game-card" href="https://jungmin060219-max.github.io/game/" target="_blank" rel="noopener noreferrer">
+          <div class="number">GAME 01</div>
+          <h3>🏓 PING PONG</h3>
+          <div class="play">PRESS START →</div>
+        </a>
+
+        <a class="game-card" href="https://jungmin060219-max.github.io/game/" target="_blank" rel="noopener noreferrer">
+          <div class="number">GAME 02</div>
+          <h3>🐍 SNAKE RETRO</h3>
+          <div class="play">PRESS START →</div>
+        </a>
+
+        <a class="game-card" href="https://jungmin060219-max.github.io/game/" target="_blank" rel="noopener noreferrer">
+          <div class="number">GAME 03</div>
+          <h3>🧱 BRICK BREAKER</h3>
+          <div class="play">PRESS START →</div>
+        </a>
+
+        <a class="game-card" href="https://jungmin060219-max.github.io/game/" target="_blank" rel="noopener noreferrer">
+          <div class="number">GAME 04</div>
+          <h3>🏃 RETRO RUNNER</h3>
+          <div class="play">PRESS START →</div>
+        </a>
+
+        <a class="game-card" href="https://jungmin060219-max.github.io/game/" target="_blank" rel="noopener noreferrer">
+          <div class="number">GAME 05</div>
+          <h3>🧠 MEMORY MATCH</h3>
+          <div class="play">PRESS START →</div>
+        </a>
+
+        <a class="game-card" href="https://jungmin060219-max.github.io/game/" target="_blank" rel="noopener noreferrer">
+          <div class="number">GAME 06</div>
+          <h3>❌ TIC TAC TOE</h3>
+          <div class="play">PRESS START →</div>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>🎵 MY MUSIC</h2>
+        <p>제가 만든 노래를 들어보세요.</p>
+      </div>
+
+      <div class="music-grid">
+        <a class="music-card" href="https://suno.com/s/mlMFasrJdKTMpP96" target="_blank" rel="noopener noreferrer">
+          <div class="number">TRACK 01</div>
+          <h3>🎵 한 페이지</h3>
+          <div class="play">LISTEN ON SUNO →</div>
+        </a>
+
+        <a class="music-card" href="https://suno.com/s/7HlHpr2g2kvPX2o1" target="_blank" rel="noopener noreferrer">
+          <div class="number">TRACK 02</div>
+          <h3>🎧 MY SONG 02</h3>
+          <div class="play">LISTEN ON SUNO →</div>
+        </a>
+
+        <a class="music-card" href="https://suno.com/song/f358e118-b09a-47d0-b102-dc48ce14eb13" target="_blank" rel="noopener noreferrer">
+          <div class="number">TRACK 03</div>
+          <h3>🎶 MY SONG 03</h3>
+          <div class="play">LISTEN ON SUNO →</div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 이정민. All rights reserved. | 연성대학교 경영학과 | GitHub Pages
+    </footer>
+  </main>
+
+</body>
+</html>
